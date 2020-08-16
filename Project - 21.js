@@ -7,14 +7,15 @@ function setup() {
   //Setting the height and width of the canvas 
   createCanvas(1600,400);
   //Creating the wall 
-  wall =  createSprite(50, 200, 50, 50);
+  bullet =  createSprite(50, 200, 50, 50);
   //Random speed 
   speed = random(223,321);
-  //Setting the velocityX of the wall
-  wall.velocityX = speed;
+  // Bullet's velocityX
+  bullet.velocityX = speed;
 
  //Creating the bullet 
-  bullet = createSprite(1500, 200, thickness, height/2);
+  wall = createSprite(1500, 200, thickness, height/2);
+
   //Random thickness 
   thickness = random(22, 83);
 
